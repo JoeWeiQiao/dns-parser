@@ -1,7 +1,6 @@
 use std::fmt;
 use std::fmt::Write;
 use std::str::from_utf8;
-use std::ascii::AsciiExt;
 
 use byteorder::{BigEndian, ByteOrder};
 
@@ -63,9 +62,6 @@ impl<'a> Name<'a> {
                 let end = pos + byte as usize + 1;
                 if parse_data.len() < end {
                     return Err(Error::UnexpectedEOF);
-                }
-                if !parse_data[pos+1..end].is_ascii() {
-                    return Err(Error::LabelIsNotAscii);
                 }
                 pos = end;
                 if parse_data.len() <= pos {

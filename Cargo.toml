@@ -1,5 +1,5 @@
 [package]
-name = "dns-parser"
+name = "dns-parser-joe"
 description = """
     Pure-rust DNS protocol parser library. This does not support network, only
     raw protocol parser.
@@ -7,9 +7,9 @@ description = """
 license = "MIT/Apache-2.0"
 readme = "README.rst"
 keywords = ["dns", "domain", "name", "parser"]
-homepage = "http://github.com/tailhook/dns-parser"
-version = "0.7.0"
-authors = ["paul@colomiets.name"]
+homepage = "https://github.com/JoeWeiQiao/dns-parser"
+version = "0.1.1"
+authors = ["joe.qiao@trantect.com"]
 
 [dependencies]
 quick-error = "1.0.0"
@@ -19,5 +19,5 @@ matches = "0.1.2"
 [dev-dependencies]
 
 [lib]
-name = "dns_parser"
+name = "dns_parser_joe"
 path = "src/lib.rs"
